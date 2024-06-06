@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed ESRI Map</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: blue;
+            overflow: auto;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .iframe-container {
+            height: 100vh;
+            width: 100%;
+            box-sizing: border-box; /* Ensures padding and border are included in the height */
+        }
+
+        .iframe-container + .iframe-container {
+            border-top: 5px solid white; /* Adjust the color and size as needed */
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ESRI Map</h1>
+    </header>
+    <div class="iframe-container">
+        <iframe 
+            src="https://gis.melissa.com/portal/apps/instant/basic/index.html?appid=5581b62f172e4deb90ddfc5da7d972ea" 
+            allowfullscreen
+            title="Embedded ESRI Map 1"
+            aria-label="Interactive map showing geographic data"></iframe>
+    </div>
+    <div class="iframe-container">
+        <iframe 
+            src="https://gis.melissa.com/portal/apps/webappviewer/index.html?id=16eb2def63cb4a8bab3d3ab15f1a73b6" 
+            allowfullscreen
+            title="Embedded ESRI Map 2"
+            aria-label="Interactive map showing geographic data"></iframe>
+    </div>
+    <footer>
+        <p>&copy; 2024 Derek/Erik</p>
+    </footer>
+</body>
+</html>
